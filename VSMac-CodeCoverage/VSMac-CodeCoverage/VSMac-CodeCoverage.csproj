@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\MonoDevelop.Addins.0.4.7\build\MonoDevelop.Addins.props" Condition="Exists('..\packages\MonoDevelop.Addins.0.4.7\build\MonoDevelop.Addins.props')" />
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CF0EBF99-9274-40F2-A1B4-FE53EBC0E436}</ProjectGuid>
-    <ProjectTypeGuids>{86F6BF2A-E449-4B3E-813B-9ACC37E5545F};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <RootNamespace>CodeCoverage</RootNamespace>
     <AssemblyName>VSMac-CodeCoverage</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFramework>net6.0-macos</TargetFramework>
+    <EnableDefaultEmbeddedResourceItems>False</EnableDefaultEmbeddedResourceItems>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -29,25 +25,6 @@
     <LangVersion>9.0</LangVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\AddinInfo.cs" />
-    <Compile Include="gtk-gui\generated.cs" />
-    <Compile Include="EditorExtension\CodeCoverageMargin.cs" />
-    <Compile Include="EditorExtension\CodeCoverageMarginProvider.cs" />
-    <Compile Include="EditorExtension\CodeCoverageMarginView.cs" />
-    <Compile Include="gtk-gui\CodeCoverage.ConsoleWidget.cs" />
-    <Compile Include="gtk-gui\CodeCoverage.PreferencesWidget.cs" />
-    <Compile Include="gtk-gui\CodeCoverage.PreferencesWindow.cs" />
-    <Compile Include="EditorExtension\MarginColors.cs" />
-    <Compile Include="Pad\CoveragePad.cs" />
-    <Compile Include="Pad\Settings.cs" />
-    <Compile Include="Pad\PreferencesWidget.cs" />
-    <Compile Include="Pad\PreferencesWindow.cs" />
-    <Compile Include="Pad\ConsoleWidget.cs" />
-    <Compile Include="Pad\InfoWidget.cs" />
-    <Compile Include="gtk-gui\CodeCoverage.Pad.InfoWidget.cs" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Properties\Manifest.addin.xml" />
     <EmbeddedResource Include="gtk-gui\gui.stetic">
       <LogicalName>gui.stetic</LogicalName>
@@ -62,8 +39,8 @@
     <Reference Include="gtk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
     <Reference Include="gdk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
     <Reference Include="Mono.Posix" />
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
+    <!-- <Reference Include="System" />
+    <Reference Include="System.Core" /> -->
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="Microsoft.Extensions.FileSystemGlobbing">
       <HintPath>..\packages\Microsoft.Extensions.FileSystemGlobbing.5.0.0\lib\net461\Microsoft.Extensions.FileSystemGlobbing.dll</HintPath>
@@ -134,7 +111,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <AddinReference Include="MonoDevelop.TextEditor.Cocoa" />
+		<PackageReference Include="Microsoft.VisualStudioMac.Sdk" Version="17.0.0" />
+	</ItemGroup>
+  <ItemGroup>
+    <!-- <AddinReference Include="MonoDevelop.TextEditor.Cocoa" /> -->
     <AddinReference Include="MonoDevelop.UnitTesting" />
   </ItemGroup>
   <ItemGroup>
@@ -154,7 +134,7 @@
       <Name>CodeCoverage.Core.Coverlet</Name>
     </ProjectReference>
   </ItemGroup>
-  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" /> -->
   <ProjectExtensions>
     <MonoDevelop>
       <Properties>
@@ -164,5 +144,5 @@
       </Properties>
     </MonoDevelop>
   </ProjectExtensions>
-  <Import Project="..\packages\MonoDevelop.Addins.0.4.7\build\MonoDevelop.Addins.targets" Condition="Exists('..\packages\MonoDevelop.Addins.0.4.7\build\MonoDevelop.Addins.targets')" />
+  <!-- <Import Project="..\packages\MonoDevelop.Addins.0.4.7\build\MonoDevelop.Addins.targets" Condition="Exists('..\packages\MonoDevelop.Addins.0.4.7\build\MonoDevelop.Addins.targets')" /> -->
 </Project>

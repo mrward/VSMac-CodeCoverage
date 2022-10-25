@@ -1,19 +1,31 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net472</TargetFramework>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CodeCoverage.Core.Coverlet</RootNamespace>
+    <AssemblyName>CodeCoverage.Core.Coverlet</AssemblyName>
+    <TargetFramework>net6.0-macos</TargetFramework>
     <IsAddin>false</IsAddin>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <LangVersion>latest</LangVersion>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <LangVersion>latest</LangVersion>
-  </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="MonoDevelop.Addins" Version="0.4.7" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="netstandard" />
     <ProjectReference Include="..\CodeCoverage.Core\CodeCoverage.Core.csproj" />
     <ProjectReference Include="..\..\coverlet\src\coverlet.core\coverlet.core.csproj" />
+    <AddinReference Include="MonoDevelop.UnitTesting" />
+  </ItemGroup>
+  <ItemGroup>
+		<PackageReference Include="Microsoft.VisualStudioMac.Sdk" Version="17.0.0" />
+	</ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector" Version="3.1.2">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="coverlet.msbuild" Version="3.1.2">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
   </ItemGroup>
 </Project>

@@ -1,11 +1,12 @@
-﻿using System;
-namespace CodeCoverage
-{
-  public partial class PreferencesDialog : Gtk.Dialog
-  {
-    public PreferencesDialog()
-    {
-      this.Build();
-    }
-  }
-}
+﻿// using System;
+// using Gtk;
+// namespace CodeCoverage
+// {
+//   public partial class PreferencesDialog : Gtk.Dialog
+//   {
+//     public PreferencesDialog()
+//     {
+//       this.Build();
+//     }
+//   }
+// }
