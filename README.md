@@ -1,3 +1,6 @@
+Fork of the main repo to add support for Visual Studio 2022
+===
+
 [![Build Status](https://dev.azure.com/arthur-demanuele/VSMac-CodeCoverage/_apis/build/status/ademanuele.VSMac-CodeCoverage?branchName=master)](https://dev.azure.com/arthur-demanuele/VSMac-CodeCoverage/_build/latest?definitionId=1&branchName=master)
 
 # VSMac-CodeCoverage
