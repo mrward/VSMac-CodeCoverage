@@ -35,106 +35,55 @@
     <Folder Include="Pad\" />
     <Folder Include="coverlet\" />
   </ItemGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="gtk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
-    <Reference Include="gdk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
-    <Reference Include="Mono.Posix" />
-    <!-- <Reference Include="System" />
-    <Reference Include="System.Core" /> -->
-    <Reference Include="System.ComponentModel.Composition" />
-    <Reference Include="Microsoft.Extensions.FileSystemGlobbing">
-      <HintPath>..\packages\Microsoft.Extensions.FileSystemGlobbing.5.0.0\lib\net461\Microsoft.Extensions.FileSystemGlobbing.dll</HintPath>
+    <Reference Include="gtk-sharp.dll">
+      <HintPath>/Applications/Visual Studio.app/Contents/MonoBundle/gtk-sharp.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Win32.Registry">
-      <HintPath>..\packages\Microsoft.Win32.Registry.5.0.0\lib\net461\Microsoft.Win32.Registry.dll</HintPath>
+    <Reference Include="glib-sharp.dll">
+      <HintPath>/Applications/Visual Studio.app/Contents/MonoBundle/glib-sharp.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="gdk-sharp.dll">
+      <HintPath>/Applications/Visual Studio.app/Contents/MonoBundle/gdk-sharp.dll</HintPath>
     </Reference>
-    <Reference Include="System.Collections.Immutable">
-      <HintPath>..\packages\System.Collections.Immutable.5.0.0\lib\net461\System.Collections.Immutable.dll</HintPath>
+    <Reference Include="MonoDevelop.Ide.dll">
+      <HintPath>/Applications/Visual Studio.app/Contents/MonoBundle/MonoDevelop.Ide.dll</HintPath>
     </Reference>
-    <Reference Include="System.Runtime.CompilerServices.Unsafe">
-      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    <Reference Include="System.Value.Tuple.dll">
+      <HintPath>/Applications/Visual Studio.app/Contents/MonoBundle/System.Value.Tuple</HintPath>
     </Reference>
-    <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
-      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    <Reference Include="Microsoft.VisualStudio.Utilities.Internal">
+      <HintPath>/Applications/Visual Studio.app/Contents/MonoBundle/Microsoft.VisualStudio.Utilities.Internal.dll</HintPath>
     </Reference>
-    <Reference Include="System.Security.AccessControl">
-      <HintPath>..\packages\System.Security.AccessControl.5.0.0\lib\net461\System.Security.AccessControl.dll</HintPath>
+    <Reference Include="Microsoft.VisualStudio.Text.UI">
+      <HintPath>/Applications/Visual Studio.app/Contents/MonoBundle/Microsoft.VisualStudio.Text.UI.dll</HintPath>
     </Reference>
-    <Reference Include="System.Security.Principal.Windows">
-      <HintPath>..\packages\System.Security.Principal.Windows.5.0.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    <Reference Include="Microsoft.VisualStudio.Text.UI.Cocoa">
+      <HintPath>/Applications/Visual Studio.app/Contents/MonoBundle/Microsoft.VisualStudio.Text.UI.Cocoa.dll</HintPath>
     </Reference>
-    <Reference Include="System.Threading.Tasks.Extensions">
-      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
-    </Reference>    
-    <Reference Include="System.Buffers">
-      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Numerics.Vectors">
-      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Numerics" />
-    <Reference Include="System.Memory">
-      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.DotNet.PlatformAbstractions">
-      <HintPath>..\packages\Microsoft.DotNet.PlatformAbstractions.3.1.6\lib\net45\Microsoft.DotNet.PlatformAbstractions.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Extensions.DependencyModel">
-      <HintPath>..\packages\Microsoft.Extensions.DependencyModel.5.0.0\lib\net461\Microsoft.Extensions.DependencyModel.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Text.Encodings.Web">
-      <HintPath>..\packages\System.Text.Encodings.Web.5.0.1\lib\net461\System.Text.Encodings.Web.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Bcl.AsyncInterfaces">
-      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ValueTuple">
-      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Text.Json">
-      <HintPath>..\packages\System.Text.Json.5.0.2\lib\net461\System.Text.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.TestPlatform.CoreUtilities">
-      <HintPath>..\packages\Microsoft.TestPlatform.ObjectModel.15.0.0\lib\net46\Microsoft.TestPlatform.CoreUtilities.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.VisualStudio.TestPlatform.ObjectModel">
-      <HintPath>..\packages\Microsoft.TestPlatform.ObjectModel.15.0.0\lib\net46\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="mscorlib" />
-    <Reference Include="System.Configuration" />
-    <Reference Include="System.Runtime" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.Xml" />
+    <PackageReference Include="Microsoft.DotNet.PlatformAbstractions" Version="3.1.6" />
+    <PackageReference Include="Microsoft.VisualStudioMac.Sdk" Version="17.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Mono.Cecil" Version="0.11.4" />
+    <PackageReference Include="System.Reflection.Metadata" Version="6.0.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyModel" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.FileSystemGlobbing" Version="6.0.0" Private="true" GeneratePathProperty="true" />
+    <PackageReference Include="System.ComponentModel.Composition" Version="6.0.0"  />
   </ItemGroup>
   <ItemGroup>
-		<PackageReference Include="Microsoft.VisualStudioMac.Sdk" Version="17.0.0" />
-	</ItemGroup>
-  <ItemGroup>
-    <!-- <AddinReference Include="MonoDevelop.TextEditor.Cocoa" /> -->
     <AddinReference Include="MonoDevelop.UnitTesting" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <ProjectReference Include="..\CodeCoverage.Pad.Native\CodeCoverage.Pad.Native.csproj"></ProjectReference>
+    <ProjectReference Include="..\CodeCoverage.Core\CodeCoverage.Core.csproj"></ProjectReference>
+    <ProjectReference Include="..\CodeCoverage.Core.Coverlet\CodeCoverage.Core.Coverlet.csproj"></ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\CodeCoverage.Pad.Native\CodeCoverage.Pad.Native.csproj">
-      <Project>{B334D4D7-4B16-4863-9A11-A2EAF13FD6AF}</Project>
-      <Name>CodeCoverage.Pad.Native</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CodeCoverage.Core\CodeCoverage.Core.csproj">
-      <Project>{F20ACA3C-8F7E-47BF-8A81-8F282F279D2B}</Project>
-      <Name>CodeCoverage.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CodeCoverage.Core.Coverlet\CodeCoverage.Core.Coverlet.csproj">
-      <Project>{426AD28D-8E72-4BA9-8C91-18492CFB7370}</Project>
-      <Name>CodeCoverage.Core.Coverlet</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <!-- <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" /> -->
+  
   <ProjectExtensions>
     <MonoDevelop>
       <Properties>

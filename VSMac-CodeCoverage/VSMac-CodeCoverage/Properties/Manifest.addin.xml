@@ -5,10 +5,10 @@
     <Name>Code Coverage</Name>
     <Description>A code coverage extension for Visual Studio for Mac.
 
-by Arthur Demanuele</Description>
-    <Author>Arthur Demanuele</Author>
-    <Copyright>Arthur Demanuele</Copyright>
-    <Url>https://github.com/ademanuele/VSMac-CodeCoverage</Url>
+by Arthur Demanuele &amp; Alex Sorokoletov</Description>
+    <Author>Arthur Demanuele &amp; Alex Sorokoletov</Author>
+    <Copyright>Arthur Demanuele &amp; Alex Sorokoletov</Copyright>
+    <Url>https://github.com/alexsorokoletov/VSMac-CodeCoverage</Url>
     <UpdateRank>Normal</UpdateRank>
   </Header>
   <Extension
@@ -24,4 +24,13 @@ by Arthur Demanuele</Description>
     <Assembly
       file="VSMac-CodeCoverage.dll" />
   </Extension>
+  <Runtime>	
+    <Import assembly="coverlet.core.dll"/>
+    <Import assembly="CodeCoverage.Core.Coverlet.dll"/>
+    <Import assembly="CodeCoverage.Core.dll"/>
+    <Import assembly="CodeCoverage.Pad.Native.dll"/>
+		<Import assembly="Microsoft.Extensions.FileSystemGlobbing.dll"/>
+    <Import assembly="Microsoft.Extensions.DependencyModel.dll"/>
+    <Import assembly="VSMac-CodeCoverage.dll"/>
+	</Runtime>
 </Addin>

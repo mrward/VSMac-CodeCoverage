@@ -23,7 +23,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="NUnit" Version="3.12.0" />
+    <PackageReference Include="NUnit" Version="3.13.3" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
   <ItemGroup>
@@ -37,16 +37,10 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\VSMac-CodeCoverage\VSMac-CodeCoverage.csproj">
-      <Project>{CF0EBF99-9274-40F2-A1B4-FE53EBC0E436}</Project>
-      <Name>VSMac-CodeCoverage</Name>
     </ProjectReference>
     <ProjectReference Include="..\CodeCoverage.Core\CodeCoverage.Core.csproj">
-      <Project>{F20ACA3C-8F7E-47BF-8A81-8F282F279D2B}</Project>
-      <Name>CodeCoverage.Core</Name>
     </ProjectReference>
     <ProjectReference Include="..\CodeCoverage.Core.Coverlet\CodeCoverage.Core.Coverlet.csproj">
-      <Project>{426AD28D-8E72-4BA9-8C91-18492CFB7370}</Project>
-      <Name>CodeCoverage.Core.Coverlet</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -16,7 +16,7 @@ namespace CodeCoverage.Core
 
 	public class LoggingService : ILoggingService
 	{
-		const string Copyright = "Made by Arthur Demanuele - 2021 \n";
+		const string Copyright = "Made by Arthur Demanuele - 2021 \n Updated by Alex Sorokoletov - 2022 \n";
 
 		public string Log { get; private set; } = Copyright;
 		public event EventHandler<string> Logged;
